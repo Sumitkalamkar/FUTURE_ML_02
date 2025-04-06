@@ -1,13 +1,13 @@
-🎬 Movie Box Office Revenue Prediction  
+### 🎬 Movie Box Office Revenue Prediction  
 This project was developed as part of an internship task at **Future Interns**. It focuses on predicting the box office revenue of movies using various features from the TMDB dataset, including genre, cast, and production budget, by applying regression techniques.
 
-📁 Dataset  
+## 📁 Dataset  
 The dataset used is the TMDB Movie Dataset, which includes metadata such as genres, cast, production companies, budget, revenue, and more.
 
-🎯 Objective  
+## 🎯 Objective  
 To build a regression model that predicts the box office revenue of a movie based on its metadata features.
 
-📊 Features Used  
+## 📊 Features Used  
 Selected and engineered features such as:
 - Genre (one-hot encoded)
 - Cast (top actors extracted)
@@ -16,7 +16,7 @@ Selected and engineered features such as:
 - Runtime
 - Production Companies (top companies filtered)
 
-🧠 Model Overview  
+## 🧠 Model Overview  
 Algorithm: Linear Regression & Random Forest Regressor  
 Preprocessing:
 - Handling missing values
@@ -27,9 +27,8 @@ Evaluation Metrics:
 - Root Mean Squared Error (RMSE)
 - Residual Analysis
 
-🛠️ Installation  
+## 🛠️ Installation  
 Install all necessary libraries:
-
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 
