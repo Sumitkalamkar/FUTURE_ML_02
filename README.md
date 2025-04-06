@@ -1,69 +1,55 @@
-# 🎬 Movie Box Office Revenue Prediction
+🎬 Movie Box Office Revenue Prediction  
+This project was developed as part of an internship task at **Future Interns**. It focuses on predicting the box office revenue of movies using various features from the TMDB dataset, including genre, cast, and production budget, by applying regression techniques.
 
-This project predicts the box office revenue of movies based on various features like **genre**, **cast**, and **production budget** using the TMDB dataset.
+📁 Dataset  
+The dataset used is the TMDB Movie Dataset, which includes metadata such as genres, cast, production companies, budget, revenue, and more.
 
-## 📌 Objective
+🎯 Objective  
+To build a regression model that predicts the box office revenue of a movie based on its metadata features.
 
-To build a regression model that can predict the **box office performance** of movies. This helps in understanding which features contribute the most to a movie’s financial success.
+📊 Features Used  
+Selected and engineered features such as:
+- Genre (one-hot encoded)
+- Cast (top actors extracted)
+- Budget (log-transformed)
+- Popularity
+- Runtime
+- Production Companies (top companies filtered)
 
----
+🧠 Model Overview  
+Algorithm: Linear Regression & Random Forest Regressor  
+Preprocessing:
+- Handling missing values
+- Feature engineering (categorical encoding, log transformation)
+- Train-test split
+Evaluation Metrics:
+- R² Score
+- Root Mean Squared Error (RMSE)
+- Residual Analysis
 
-## 🧰 Tools & Technologies Used
+🛠️ Installation  
+Install all necessary libraries:
 
-- **Python**
-- **Pandas** & **NumPy** for data manipulation
-- **Matplotlib** for data visualization
-- **Scikit-learn** for machine learning and model evaluation
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
 
----
+🚀 How to Run the Project
 
-## 📂 Dataset
+Place task 2.ipynb and the TMDB dataset CSV file in the same directory.
 
-- **Source**: The Movie Database (TMDB)
-- **Contains**: 
-  - Movie title, genre, cast, budget, revenue, and other metadata.
-  - Used for supervised regression tasks.
+Open task 2.ipynb in Jupyter Notebook.
 
----
+Run all cells sequentially to preprocess data, train models, and evaluate performance.
 
-## 🔍 Project Structure
+📈 Output Includes
 
-- **task 2.ipynb**: Jupyter notebook with the complete code for data preprocessing, model building, and evaluation.
-- **README.md**: Project documentation.
+Model accuracy (R² Score)
 
----
+RMSE value
 
-## 🧪 Workflow
+Key influencing factors (via feature importance)
 
-1. **Data Cleaning**: Handle missing values, incorrect formats, and outliers.
-2. **Feature Engineering**: 
-   - One-hot encoding for genres
-   - Top cast extraction
-   - Log transformation of budget and revenue
-3. **Modeling**:
-   - Linear Regression
-   - Random Forest Regressor
-   - Performance measured using RMSE and R² score
-4. **Analysis**: Key factors influencing box office revenue are highlighted.
+Visualizations of predicted vs actual revenue
 
----
-
-## 📈 Results
-
-- The best-performing model achieved an **R² score of `X.XX`** and **RMSE of `XXXXXXX`**.
-- **Key influential factors**:
-  - Production Budget
-  - Popularity
-  - Top Cast Members
-  - Genre Categories
-
-> *Insight:* Higher budgets and well-known casts generally correlate with higher box office performance.
-
----
-
-## 🚀 How to Run
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/movie-boxoffice-prediction.git
-   cd movie-boxoffice-prediction
+👨‍💻 Author
+Sumit — developed as an internship project for Future Interns
